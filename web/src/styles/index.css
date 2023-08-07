@@ -1,4 +1,15 @@
 html {
+    background-color: #0D0D0D;
     font-family: "noto-sans", sans-serif;
-    background-image: url("../assets/bg.png");
+    color: "#F2F2F2";
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
 }
+
+body {
+    margin-left: 7.3vw;
+    margin-right: 7.3vw;
+    margin-top: 8.22vw; 
+}
+
+
