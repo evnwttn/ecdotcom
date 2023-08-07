@@ -38,9 +38,9 @@ export const App = () => {
               Dan Swanö.
             </Box>
             <Box sx={appSx.bio.bottomDiv}>
-              A hobbylist musician and graphic designer, Evan Watton has
-              produced music for over 15 years. His past projects include
-              deathcore act, Ascariasis.
+              As a hobbyist, Evan Watton has produced music and graphic art for
+              over 15 years. His past projects include deathcore act,
+              Ascariasis.
             </Box>
           </Box>
         </Box>
