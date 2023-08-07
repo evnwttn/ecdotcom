@@ -45,6 +45,7 @@ export const Nav = () => {
         width: "43.75vw",
         ml: "2.9vw",
         justifyContent: "space-between",
+        mb: "2.5vw",
       }}
     >
       {navConfig.map((item: NavItem) => {
