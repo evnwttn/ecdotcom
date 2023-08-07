@@ -1,4 +1,5 @@
-import { Box, IconButton, Link } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
+import { navSx } from "../styles";
 
 import bandcampIcon from "../assets/icons/bandcamp.svg";
 import instagramIcon from "../assets/icons/instagram.svg";
@@ -38,16 +39,7 @@ const navConfig: NavItem[] = [
 
 export const Nav = () => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "row nowrap",
-        width: "43.75vw",
-        ml: "2.9vw",
-        justifyContent: "space-between",
-        mb: "2.5vw",
-      }}
-    >
+    <Box sx={navSx.container}>
       {navConfig.map((item: NavItem) => {
         return (
           <a
@@ -56,17 +48,7 @@ export const Nav = () => {
             rel="noopener noreferrer"
             key={item.name}
           >
-            <IconButton
-              key={item.name}
-              sx={{
-                width: "3.5vw",
-                height: "3.5vw",
-                "&:hover": {
-                  cursor: "pointer",
-                  opacity: "0.7",
-                },
-              }}
-            >
+            <IconButton key={item.name} sx={navSx.iconButton}>
               <img src={item.icon} />
             </IconButton>
           </a>
