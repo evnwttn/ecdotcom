@@ -40,7 +40,7 @@ export const App = () => {
             <Box sx={appSx.bio.bottomDiv}>
               A hobbylist musician and graphic designer, Evan Watton has
               produced music for over 15 years. His past projects include
-              international deathcore act, Ascariasis.
+              deathcore act, Ascariasis.
             </Box>
           </Box>
         </Box>
