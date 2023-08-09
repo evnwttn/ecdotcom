@@ -1,0 +1,19 @@
+.svg-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  
+  @media (max-width: 480px) {
+    .svg-icon {
+      height: 6.5vw;
+      width: 6.5vw;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .svg-icon {
+      height: 5vw;
+      width: 5vw;
+    }
+  }
+  

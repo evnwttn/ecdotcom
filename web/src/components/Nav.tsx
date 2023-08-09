@@ -1,5 +1,6 @@
 import { Box, IconButton } from "@mui/material";
 import { navSx } from "../styles";
+import "../styles/nav.css";
 
 import bandcampIcon from "../assets/icons/bandcamp.svg";
 import instagramIcon from "../assets/icons/instagram.svg";
@@ -49,7 +50,7 @@ export const Nav = () => {
             key={item.name}
           >
             <IconButton key={item.name} sx={navSx.iconButton}>
-              <img src={item.icon} />
+              <img className="svg-icon" src={item.icon} alt={item.name} />{" "}
             </IconButton>
           </a>
         );
