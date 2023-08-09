@@ -16,6 +16,14 @@ export const Cover = () => {
           backgroundImage: `url(${cover})`,
           ml: "10vw",
           mb: "2.5vw",
+          mt: "1.5vw",
+          "@media (max-width: 480px)": {
+            mt: "3.5vw",
+            ml: "6vw",
+            mb: "5vw",
+            height: "52vw",
+            width: "52vw",
+          },
         }}
       />
     </a>
