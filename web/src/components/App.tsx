@@ -11,7 +11,7 @@ export const App = () => {
           <Box>Alien Space Bats / From Below</Box>
           <Box sx={appSx.title.subtitle.available}>
             Available Everywhere
-            <Box sx={appSx.title.subtitle.date}>00/00/00</Box>
+            <Box sx={appSx.title.subtitle.date}>14/09/23</Box>
           </Box>
         </Box>
         <Nav />
@@ -25,22 +25,30 @@ export const App = () => {
             </Box>
             <Box sx={appSx.bio.div}>
               On March 1st, 2023, ELDER CAIUS released its debut single,{" "}
-              <i>Kailash, When It Rises</i>, a sprawling nine-minute prog
-              anomaly pairing dreamy synthesizers with elements of filmscore and
-              noise. Created as part of the RPM Challenge, <i>Kailash...</i> was
+              <i>Kailash, When It Rises</i> - a sprawling nine-minute odyssey
+              pairing dreamy psychedelia with filmscore elements and noise.
+              Created as part of the RPM Challenge, <i>Kailash... </i>was
               written and self produced entirely within the month of February.
             </Box>
             <Box sx={appSx.bio.div}>
-              The follow up double feature,{" "}
-              <i> Alien Space Bats / From Below</i>, plunges deep into the murky
-              depths of psychedelia and surfaces as a grimier, sunken form. It
-              features the finishing touches of legendary Mastering Engineer,
-              Dan Swanö.
+              Coming this September, double feature{" "}
+              <i>Alien Space Bats / From Below</i>, plunges into murkier depths
+              and resurfaces a grime-fuelled prog anomaly. It features the
+              finishing touches of legendary Swedish mastering engineer, Dan
+              Swanö (
+              <a
+                href="https://www.unisound.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Unisound
+              </a>
+              ).
             </Box>
             <Box sx={appSx.bio.bottomDiv}>
-              As a hobbyist, Evan Watton has produced music and graphic art for
-              over 15 years. His past projects include deathcore act,
-              Ascariasis.
+              As a hobbylist, Watton has produced music and designed graphics
+              for over 15 years. His past projects include Canadian deathcore
+              act, Ascariasis.
             </Box>
           </Box>
         </Box>
