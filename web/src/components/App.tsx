@@ -20,8 +20,7 @@ export const App = () => {
           <Box sx={appSx.bio.title}>About</Box>
           <Box sx={appSx.bio.body}>
             <Box sx={appSx.bio.div}>
-              ELDER CAIUS, based in St. John's, Newfoundland, is an audio/visual
-              project created by Evan Watton.
+              ELDER CAIUS is an audio/visual project created by Evan Watton.
             </Box>
             <Box sx={appSx.bio.div}>
               On March 1st, 2023, ELDER CAIUS released its debut single,{" "}
@@ -32,10 +31,9 @@ export const App = () => {
             </Box>
             <Box sx={appSx.bio.div}>
               Coming this September, double feature{" "}
-              <i>Alien Space Bats / From Below</i>, plunges into murkier depths
+              <i>Alien Space Bats / From Below</i> plunges into murkier depths
               and resurfaces a grime-fuelled prog anomaly. It features the
-              finishing touches of legendary Swedish mastering engineer, Dan
-              Swanö (
+              finishing touches of legendary mastering engineer, Dan Swanö (
               <a
                 href="https://www.unisound.se/"
                 target="_blank"
@@ -48,7 +46,7 @@ export const App = () => {
             <Box sx={appSx.bio.bottomDiv}>
               As a hobbylist, Watton has produced music and designed graphics
               for over 15 years. His past projects include Canadian deathcore
-              act, Ascariasis.
+              act, Ascariasis. He lives in St. John's, Newfoundland.
             </Box>
           </Box>
         </Box>
