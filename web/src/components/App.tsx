@@ -20,9 +20,6 @@ export const App = () => {
           <Box sx={appSx.bio.title}>About</Box>
           <Box sx={appSx.bio.body}>
             <Box sx={appSx.bio.div}>
-              ELDER CAIUS is an audio/visual project created by Evan Watton.
-            </Box>
-            <Box sx={appSx.bio.div}>
               On March 1st, 2023, ELDER CAIUS released its debut single,{" "}
               <i>Kailash, When It Rises</i> - a sprawling nine-minute odyssey
               pairing dreamy psychedelia with filmscore elements and noise.
@@ -30,9 +27,9 @@ export const App = () => {
               written and self produced entirely within the month of February.
             </Box>
             <Box sx={appSx.bio.div}>
-              Coming this September, double feature{" "}
+              This September, double feature{" "}
               <i>Alien Space Bats / From Below</i> plunges into murkier depths
-              and resurfaces a grime-fuelled prog anomaly. It features the
+              and surfaces a grime-fuelled prog anomaly. It features the
               finishing touches of legendary mastering engineer, Dan Swanö (
               <a
                 href="https://www.unisound.se/"
@@ -44,9 +41,9 @@ export const App = () => {
               ).
             </Box>
             <Box sx={appSx.bio.bottomDiv}>
-              As a hobbylist, Watton has produced music and designed graphics
-              for over 15 years. His past projects include Canadian deathcore
-              act, Ascariasis. He lives in St. John's, Newfoundland.
+              ELDER CAIUS is an audio/visual project created by Evan Watton. His
+              past projects include the Canadian deathcore band, Ascariasis. He
+              lives in St. John's, Newfoundland.
             </Box>
           </Box>
         </Box>
