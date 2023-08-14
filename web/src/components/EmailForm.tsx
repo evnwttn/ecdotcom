@@ -1,37 +1,7 @@
 import { useState, useRef } from "react";
 import { Box, TextField, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
-
-const modalSx = {
-  container: {
-    textAlign: "center",
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "33%",
-    boxShadow: "0px 0px 50pt rbg(0 0 0 / 0.16)",
-    p: "2.75vw",
-    backgroundColor: "black",
-    border: "solid 1px white",
-  },
-  title: {
-    fontFamily: "noto-serif, serif",
-    textTransform: "uppercase",
-    fontSize: "1vw",
-    letterSpacing: "1vw",
-    color: "yellow",
-  },
-  message: {
-    color: "white",
-    my: "0.5vw",
-    fontSize: "1vw",
-    letterSpacing: "0.1vw",
-  },
-  icon: {
-    color: "white",
-  },
-};
+import { modalSx } from "../styles";
 
 const validateEmail = (email: string): boolean => {
   const emailFormat = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/g.test(
@@ -69,14 +39,24 @@ export const EmailForm = ({ handleClose }: { handleClose: () => void }) => {
     <Box sx={modalSx.container}>
       <Box sx={modalSx.title}>Join The Mailing List</Box>
       <Box sx={modalSx.message}>{formMessage}</Box>
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <TextField
+          variant="standard"
           disabled={submitting}
           error={emailFieldError}
-          label={"Email Address"}
+          placeholder={"Email Address"}
           id="email-field"
           inputRef={emailField}
-          variant="outlined"
+          InputProps={{
+            disableUnderline: true,
+          }}
+          sx={modalSx.textField}
         />
         <IconButton
           sx={modalSx.icon}
