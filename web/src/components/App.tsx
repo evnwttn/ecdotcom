@@ -4,7 +4,7 @@ import { Body, EmailForm } from ".";
 import { appSx } from "../styles";
 
 export const App = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
 
   return (

@@ -1,15 +1,8 @@
 import { useState, useRef } from "react";
 import { Box, TextField, IconButton } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import { validateEmail, postEmail, PostEmailProps } from "./functions";
 import { modalSx } from "../styles";
-
-const validateEmail = (email: string): boolean => {
-  const emailFormat = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/g.test(
-    email
-  );
-
-  return emailFormat;
-};
 
 export const EmailForm = ({ handleClose }: { handleClose: () => void }) => {
   const [submitting, toggleSubmitting] = useState<boolean>(false);
@@ -31,8 +24,13 @@ export const EmailForm = ({ handleClose }: { handleClose: () => void }) => {
       return;
     }
 
-    console.log(email);
-    handleClose();
+    postEmail({
+      email,
+      setFormMessage,
+      setEmailFieldError,
+      toggleSubmitting,
+      handleClose,
+    } as PostEmailProps);
   };
 
   return (
