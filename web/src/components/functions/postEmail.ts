@@ -9,20 +9,19 @@ export const postEmail = async ({
   handleClose,
 }: PostEmailProps) => {
   let isMounted = true;
-
   setFormMessage("Submitting... ");
 
   const handleResponse = (success: boolean) => {
     if (success) {
-      setFormMessage("Success!");
+      setFormMessage("Success");
       handleClose();
-
-      return;
+    } else {
+      setFormMessage("Internal error: please try again.");
+      setEmailFieldError(true);
+      toggleSubmitting(false);
     }
 
-    setFormMessage("Internal error, please try again.");
-    setEmailFieldError(true);
-    toggleSubmitting(false);
+    return;
   };
 
   axios
@@ -32,6 +31,8 @@ export const postEmail = async ({
     )
     .catch(function (error: any) {
       console.log(error);
+
+      handleResponse(false);
     });
 
   return () => {
