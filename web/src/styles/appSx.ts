@@ -41,7 +41,7 @@ export const appSx = {
       date: { color: palette.grey, ml: "0.95vw" },
     },
   },
-  bio: {
+  press: {
     wrap: {
       width: "41.30vw",
       height: "auto",
@@ -66,6 +66,8 @@ export const appSx = {
       letterSpacing: "0.1vw",
       color: palette.offwhite,
       width: "39vw",
+      backgroundColor: "red",
+      height: "20vw",
       ml: "5.5vw",
       mb: "2.5vw",
       "@media (max-width: 480px)": {
@@ -74,6 +76,5 @@ export const appSx = {
       },
     },
     div: { mb: "1.25vw" },
-    bottomDiv: { paddingBottom: "4.11vw" },
   },
 };
