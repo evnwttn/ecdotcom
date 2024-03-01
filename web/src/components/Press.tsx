@@ -7,7 +7,15 @@ interface PressItem {
   img: string;
 }
 
-const pressArray: PressItem[] = [{ header: "", link: "", img: "" }];
+const pressArray: PressItem[] = [
+  { header: "", link: "", img: "" },
+  {
+    header:
+      "HeavyNFLD | Elder Caius Releases Debut Single “Kailash, When It Rises",
+    link: "https://heavynfld.wordpress.com/2023/03/22/elder-caius-releases-debut-single-kailash-when-it-rises/",
+    img: "",
+  },
+];
 
 export const Press = () => {
   return (

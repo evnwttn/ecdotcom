@@ -4,7 +4,7 @@ import cover from "../assets/img/Artwork.png";
 export const Cover = () => {
   return (
     <a
-      href="https://raw.githubusercontent.com/evnwttn/ecdotcom/main/web/src/assets/img/Artwork.png"
+      href="https://raw.githubusercontent.com/evnwttn/ecdotcom/main/web/src/assets/img/LogoFace.png"
       target="_blank"
       rel="noopener noreferrer"
     >

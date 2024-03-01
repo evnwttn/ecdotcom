@@ -66,7 +66,6 @@ export const appSx = {
       letterSpacing: "0.1vw",
       color: palette.offwhite,
       width: "39vw",
-      backgroundColor: "red",
       height: "20vw",
       ml: "5.5vw",
       mb: "2.5vw",
